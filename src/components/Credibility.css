@@ -1,0 +1,96 @@
+.credibility {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.credibility-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.credibility-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-icon {
+  font-size: 3rem;
+}
+
+.stat-icon img {
+  width: 56px;
+  height: 56px;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00b894;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+.stat-stars {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  letter-spacing: 2px;
+}
+
+.stat-divider {
+  width: 2px;
+  height: 60px;
+  background: #e0e0e0;
+}
+
+.credibility-quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.quote-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #00b894;
+}
+
+.quote-text {
+  color: #555;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .credibility-stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stat-divider {
+    width: 60px;
+    height: 2px;
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "name": "dentist-landing",
+  "name": "novaodonto",
   "private": true,
-  "version": "0.0.0",
-  "homepage": "https://jmbrsxx.github.io/dentist-landing-page/",
+  "version": "1.0.0",
+  "homepage": "https://jmbrsxx.github.io/novaodonto/",
   "type": "module",
   "scripts": {
     "dev": "vite",

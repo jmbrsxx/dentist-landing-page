@@ -1,41 +1,46 @@
 import React from 'react';
 import './About.css';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const About = () => {
+  const [ref, isVisible] = useScrollAnimation();
+  
   return (
-    <section id="about" className="about">
+    <section id="about" className={`about fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="about-container">
         <div className="about-image">
           <div className="about-image-placeholder">
-            <span className="about-emoji">👨‍⚕️</span>
+            <img 
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&h=600&fit=crop" 
+              alt="Dentista Profissional NovaOdonto" 
+              className="about-dentist-img" 
+            />
           </div>
         </div>
         <div className="about-content">
-          <h2 className="about-title">About Our Practice</h2>
+          <h2 className="about-title">Sobre a NovaOdonto</h2>
           <p className="about-text">
-            With over 10 years of experience in dental care, we are committed to 
-            providing the highest quality dental services in a comfortable and 
-            relaxing environment. Our team of certified professionals uses the 
-            latest technology and techniques to ensure the best possible care for 
-            you and your family.
+            A <strong>NovaOdonto Canoas</strong> é uma clínica odontológica dedicada a oferecer 
+            atendimento humanizado e tratamentos modernos para garantir a saúde e estética do 
+            sorriso de seus pacientes.
           </p>
           <p className="about-text">
-            We believe in preventive care and patient education, helping you 
-            maintain optimal oral health for life. Our warm and friendly staff 
-            is dedicated to making your dental visit a positive experience.
+            Nosso compromisso é proporcionar qualidade, conforto e segurança em cada consulta. 
+            Com profissionais qualificados e estrutura moderna, cuidamos do seu sorriso com 
+            carinho e excelência.
           </p>
-          <div className="about-stats">
-            <div className="stat">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Years Experience</span>
+          <div className="about-features">
+            <div className="feature-item">
+              <span className="feature-check">✓</span>
+              <span>Mais de 10 anos de experiência</span>
             </div>
-            <div className="stat">
-              <span className="stat-number">5000+</span>
-              <span className="stat-label">Patients</span>
+            <div className="feature-item">
+              <span className="feature-check">✓</span>
+              <span>Atendimento humanizado</span>
             </div>
-            <div className="stat">
-              <span className="stat-number">98%</span>
-              <span className="stat-label">Satisfaction</span>
+            <div className="feature-item">
+              <span className="feature-check">✓</span>
+              <span>Equipamentos modernos</span>
             </div>
           </div>
         </div>

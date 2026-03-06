@@ -1,0 +1,124 @@
+.testimonials {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.testimonials-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.testimonials-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.testimonials-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.rating-stars {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.rating-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00b894;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.testimonial-card {
+  background: #f8f9fa;
+  padding: 1.8rem;
+  border-radius: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #00b894;
+}
+
+.testimonial-rating {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.testimonial-text {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  color: #00b894;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.testimonials-cta {
+  text-align: center;
+}
+
+.google-review-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.google-review-btn:hover {
+  border-color: #00b894;
+  color: #00b894;
+}
+
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 1.8rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

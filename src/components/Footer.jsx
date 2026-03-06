@@ -6,37 +6,37 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h3 className="footer-logo">Smile Dental</h3>
+          <h3 className="footer-logo">NovaOdonto</h3>
           <p className="footer-tagline">
-            Your trusted partner for a healthier, brighter smile.
+            Sua clínica de confiança para cuidar do seu sorriso em Canoas.
           </p>
-          <div className="footer-social">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Twitter">🐦</a>
+          <div className="footer-contact">
+            <p>📍 R. Quinze de Janeiro, 373 - Sala 604</p>
+            <p>Centro, Canoas - RS</p>
+            <p>📞 (51) 3031-1020</p>
           </div>
         </div>
         <div className="footer-links">
-          <h4>Quick Links</h4>
+          <h4>Links Rápidos</h4>
           <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#contact">Agendar Consulta</a></li>
           </ul>
         </div>
         <div className="footer-services">
-          <h4>Services</h4>
+          <h4>Serviços</h4>
           <ul>
-            <li><a href="#">General Dentistry</a></li>
-            <li><a href="#">Cosmetic Dentistry</a></li>
-            <li><a href="#">Orthodontics</a></li>
-            <li><a href="#">Dental Implants</a></li>
+            <li><a href="#contact">Limpeza Dental</a></li>
+            <li><a href="#contact">Clareamento</a></li>
+            <li><a href="#contact">Tratamento de Canal</a></li>
+            <li><a href="#contact">Implantes</a></li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Smile Dental. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} NovaOdonto Canoas. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

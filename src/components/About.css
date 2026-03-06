@@ -1,13 +1,13 @@
 .about {
-  padding: 6rem 2rem;
+  padding: 5rem 2rem;
   background: white;
 }
 
 .about-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 4rem;
   align-items: center;
 }
@@ -18,59 +18,69 @@
 }
 
 .about-image-placeholder {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 30px;
+  width: 100%;
+  max-width: 450px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 184, 148, 0.25);
 }
 
-.about-emoji {
-  font-size: 8rem;
+.about-dentist-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-content {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .about-title {
-  font-size: 3rem;
-  color: #2c3e50;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .about-text {
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 1.05rem;
+  color: #555;
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
-.about-stats {
-  display: flex;
-  gap: 3rem;
-  margin-top: 3rem;
+.about-text strong {
+  color: #00b894;
 }
 
-.stat {
+.about-features {
+  margin-top: 2rem;
+}
+
+.feature-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #333;
 }
 
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #667eea;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.5rem;
+.feature-check {
+  width: 24px;
+  height: 24px;
+  background: #00b894;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 @media (max-width: 900px) {
@@ -78,23 +88,30 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .about-image-placeholder {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
   }
-  
-  .about-emoji {
-    font-size: 5rem;
+
+  .about-dentist-img {
+    width: 100%;
+    height: 100%;
   }
-  
+
   .about-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
-  
-  .about-stats {
-    justify-content: center;
-    flex-wrap: wrap;
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
