@@ -6,14 +6,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h3 className="footer-logo">NovaOdonto</h3>
+          <h3 className="footer-logo">Clínica XXXXXXXX</h3>
           <p className="footer-tagline">
             Sua clínica de confiança para cuidar do seu sorriso em Canoas.
           </p>
           <div className="footer-contact">
-            <p>📍 R. Quinze de Janeiro, 373 - Sala 604</p>
+            <p>📍 R. XXXXXXXXXXXX</p>
             <p>Centro, Canoas - RS</p>
-            <p>📞 (51) 3031-1020</p>
+            <p>📞 (51) XXXXXXXXX</p>
           </div>
         </div>
         <div className="footer-links">
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} NovaOdonto Canoas. Todos os direitos reservados.</p>
+        <p>© {new Date().getFullYear()} Clínica XXXXXXXX. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

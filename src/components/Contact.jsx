@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section id="contact" className={`contact fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="contact-container">
-        <h2 className="contact-title">Agende sua Consulta</h2>
+        <h2 className="contact-title">Agende sua Consulta online</h2>
         <p className="contact-subtitle">
           Tire suas dúvidas e marque seu atendimento
         </p>
@@ -24,14 +24,14 @@ const Contact = () => {
               <span className="info-icon">📍</span>
               <div>
                 <h4>Endereço</h4>
-                <p>R. Quinze de Janeiro, 373 - Sala 604<br />Centro, Canoas - RS</p>
+                <p>XXXXXXXXXXXXXXXXXX<br />Centro, Canoas - RS</p>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">📞</span>
               <div>
                 <h4>Telefone</h4>
-                <p>(51) 3031-1020</p>
+                <p>(51) XXXXXXXX</p>
               </div>
             </div>
             <div className="info-item">
@@ -45,15 +45,15 @@ const Contact = () => {
               <img src={WhatsAppIcon} alt="WhatsApp" className="info-icon-img" />
               <div>
                 <h4>WhatsApp</h4>
-                <p>(51) 99311-1020</p>
+                <p>(51) XXXXXX</p>
               </div>
             </div>
             <div className="contact-cta-buttons">
-              <a href="tel:5130311020" className="cta-btn cta-call">
+              <a href="tel:0000000000" className="cta-btn cta-call">
                 📞 Ligar agora
               </a>
               <a 
-                href="https://wa.me/5551993111020" 
+                href="https://wa.me/55510000000000000" 
                 className="cta-btn cta-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const Contact = () => {
         </div>
         <div className="contact-map">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.529137584258!2d-51.1786448!3d-29.9176832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519b4e5a7e8e8e8%3A0x9519b4e5a7e8e8e8!2sR.%20Quinze%20de%20Janeiro%2C%20373%20-%20Centro%2C%20Canoas%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1630000000000!5m2!1spt-BR!2sbr" 
+            src="https://www.google.com/maps?q=Avenida+Brasil+500+Centro+Passo+Fundo+RS+Brazil&output=embed" 
             width="100%" 
             height="350" 
             style={{border: 0, borderRadius: '12px'}} 
