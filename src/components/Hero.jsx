@@ -25,7 +25,7 @@ const Hero = () => {
             Agendar consulta
           </a>
           <a 
-            href="https://wa.me/555130311020" 
+            href="https://wa.me/55431432142142143" 
             className="btn btn-whatsapp"
             target="_blank"
             rel="noopener noreferrer"
@@ -33,7 +33,7 @@ const Hero = () => {
             <img src={ChatIcon} alt="WhatsApp" className="btn-icon-img" />
             Falar no WhatsApp
           </a>
-          <a href="tel:5130311020" className="btn btn-secondary">
+          <a href="tel:4343143243124321243" className="btn btn-secondary">
             <span className="btn-icon">📞</span>
             Ligar agora
           </a>
