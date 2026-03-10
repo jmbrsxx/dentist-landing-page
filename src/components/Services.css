@@ -94,3 +94,121 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Gallery Section */
+.services-gallery {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.gallery-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.services-swiper {
+  padding: 1rem 0 3rem 0;
+}
+
+.services-swiper .swiper-button-prev,
+.services-swiper .swiper-button-next {
+  color: #00b894;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services-swiper .swiper-button-prev::after,
+.services-swiper .swiper-button-next::after {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.services-swiper .swiper-button-prev:hover,
+.services-swiper .swiper-button-next:hover {
+  background: #00b894;
+  color: white;
+}
+
+.services-swiper .swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.services-swiper .swiper-slide-active {
+  transform: scale(1.05);
+}
+
+.gallery-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  margin: 0.5rem;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 184, 148, 0.2);
+  border-color: #00b894;
+}
+
+.gallery-icon {
+  margin-bottom: 1rem;
+}
+
+.gallery-icon img {
+  width: 72px;
+  height: 72px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-icon img {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.gallery-card-title {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.gallery-card-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Swiper Animation */
+.services-swiper .swiper-slide {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+
+.services-swiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.services-swiper .swiper-slide-prev,
+.services-swiper .swiper-slide-next {
+  opacity: 0.7;
+  transform: scale(0.95);
+}

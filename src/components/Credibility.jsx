@@ -1,44 +1,72 @@
 import React from 'react';
 import './Credibility.css';
-import StarIcon from '../assets/icons/sparkle.svg';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 import PeopleIcon from '../assets/icons/people.svg';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import TrophyIcon from '../assets/icons/trophy.svg';
+import DentistIcon from '../assets/icons/dentist.svg';
+
+const CounterCard = ({ icon, count, suffix, label, delay = 0 }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  return (
+    <div className="counter-card" ref={ref}>
+      <div className="counter-icon">
+        <img src={icon} alt={label} />
+      </div>
+      <div className="counter-content">
+        <span className="counter-value">
+          {inView ? (
+            <CountUp end={count} duration={4} delay={delay} separator="." />
+          ) : (
+            '0'
+          )}
+          {suffix}
+        </span>
+        <span className="counter-label">{label}</span>
+      </div>
+    </div>
+  );
+};
 
 const Credibility = () => {
-  const [ref, isVisible] = useScrollAnimation();
-  
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section className={`credibility fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
+    <section className="credibility" ref={ref}>
       <div className="credibility-container">
-        <div className="credibility-stats">
-          <div className="stat-item">
-            <div className="stat-icon">
-              <img src={StarIcon} alt="Estrelas" />
-            </div>
-            <div className="stat-content">
-              <span className="stat-value">5,0</span>
-              <span className="stat-label">Estrelas no Google</span>
-              <div className="stat-stars">⭐⭐⭐⭐⭐</div>
-            </div>
-          </div>
-          <div className="stat-divider"></div>
-          <div className="stat-item">
-            <div className="stat-icon">
-              <img src={PeopleIcon} alt="Pacientes" />
-            </div>
-            <div className="stat-content">
-              <span className="stat-value">147+</span>
-              <span className="stat-label">Pacientes satisfeitos</span>
-            </div>
-          </div>
-        </div>
-        <div className="credibility-quotes">
-          <div className="quote-card">
-            <p className="quote-text">"Ótima clínica com profissionais de excelência e muito competentes."</p>
-          </div>
-          <div className="quote-card">
-            <p className="quote-text">"Recomendo a todos, ótimos preços e excelência em atendimento."</p>
-          </div>
+        <h2 className="credibility-title">Nossos Números</h2>
+        <p className="credibility-subtitle">
+          Compromisso com a excelência e satisfação dos nossos pacientes
+        </p>
+        <div className="counters-grid">
+          <CounterCard 
+            icon={PeopleIcon} 
+            count={5000} 
+            suffix="+" 
+            label="Pacientes Atendidos" 
+            delay={0}
+          />
+          <CounterCard 
+            icon={TrophyIcon} 
+            count={15} 
+            suffix="" 
+            label="Anos de Experiência" 
+            delay={0.3}
+          />
+          <CounterCard 
+            icon={DentistIcon} 
+            count={1200} 
+            suffix="+" 
+            label="Implantes Realizados" 
+            delay={0.6}
+          />
         </div>
       </div>
     </section>

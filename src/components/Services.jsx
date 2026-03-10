@@ -1,6 +1,11 @@
 import React from 'react';
 import './Services.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import ToothIcon from '../assets/icons/tooth.svg';
 import SparkleIcon from '../assets/icons/sparkle.svg';
 import ToolIcon from '../assets/icons/tool.svg';
@@ -68,6 +73,46 @@ const Services = () => {
               <a href="#contact" className="service-btn">{service.button}</a>
             </div>
           ))}
+        </div>
+
+        {/* Gallery Section with Swiper */}
+        <div className="services-gallery">
+          <h3 className="gallery-title">Galeria de Serviços</h3>
+          <p className="gallery-subtitle">
+            Veja alguns dos nossos tratamentos e procedimentos
+          </p>
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+            className="services-swiper"
+          >
+            {services.map((service, index) => (
+              <SwiperSlide key={index}>
+                <div className="gallery-card">
+                  <div className="gallery-icon">
+                    <img src={service.icon} alt={service.title} />
+                  </div>
+                  <h4 className="gallery-card-title">{service.title}</h4>
+                  <p className="gallery-card-description">{service.description}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
