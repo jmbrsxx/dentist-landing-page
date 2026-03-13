@@ -13,7 +13,7 @@ const Hero = () => {
           <span>147+ avaliações</span>
         </div>
         <h1 className="hero-title">
-          Dentista em Canoas com <span className="highlight">Atendimento Humanizado</span>
+          Dentista em Caxias do Sul com <span className="highlight">Atendimento Humanizado</span>
         </h1>
         <p className="hero-subtitle">
           Mais de 147 avaliações 5 estrelas e atendimento especializado para cuidar do seu sorriso.

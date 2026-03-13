@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="footer-brand">
           <h3 className="footer-logo">Clínica XXXXXXXX</h3>
           <p className="footer-tagline">
-            Sua clínica de confiança para cuidar do seu sorriso em Canoas.
+            Sua clínica de confiança para cuidar do seu sorriso em Caxias do Sul.
           </p>
           <div className="footer-contact">
             <p>📍 R. XXXXXXXXXXXX</p>
-            <p>Centro, Canoas - RS</p>
+            <p>Caxias do Sul - RS</p>
             <p>📞 (51) XXXXXXXXX</p>
           </div>
         </div>

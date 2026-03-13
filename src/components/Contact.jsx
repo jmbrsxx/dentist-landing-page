@@ -24,7 +24,7 @@ const Contact = () => {
               <span className="info-icon">📍</span>
               <div>
                 <h4>Endereço</h4>
-                <p>XXXXXXXXXXXXXXXXXX<br />Centro, Canoas - RS</p>
+                <p>XXXXXXXXXXXXXXXXXX<br />Caxias do Sul - RS</p>
               </div>
             </div>
             <div className="info-item">
