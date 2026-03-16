@@ -17,7 +17,7 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#" className="nav-logo">
-          <img src='public/images/novaodontologo.png' alt="Logo" className="nav-logo-icon" />
+          <img src='images/novaodontologo.png' alt="Logo" className="nav-logo-icon" />
           NovaOdonto
         </a>
         
