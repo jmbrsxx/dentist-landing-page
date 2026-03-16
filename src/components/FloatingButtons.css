@@ -50,12 +50,22 @@
 }
 
 .call-btn {
-  background: var(--gold-gradient);
+  background: var(--gold-primary);
+  transition: all 0.3s ease;
 }
 
 .call-btn:hover {
+  background: #ffffff;
   transform: scale(1.1);
   box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+.call-btn .floating-btn-icon {
+  filter: brightness(0);
+}
+
+.call-btn:hover .floating-btn-icon {
+  filter: brightness(0) invert(1);
 }
 
 @keyframes pulse {

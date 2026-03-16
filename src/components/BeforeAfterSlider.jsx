@@ -23,7 +23,7 @@ export default function BeforeAfterSlider() {
   ];
 
   return (
-    <section className="before-after-section">
+    <section id="antes-depois" className="before-after-section">
       <div className="section-container">
         <h2 className="section-title">Antes e Depois</h2>
         <p className="section-subtitle">Veja a transformação dos nossos pacientes</p>

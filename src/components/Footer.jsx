@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="footer-brand">
           <h3 className="footer-logo">NovaOdonto</h3>
           <p className="footer-tagline">
-            Sua clínica de confiança para cuidar do seu sorriso em Caxias do Sul.
+            Sua clínica de confiança para cuidar do seu sorriso em Canoas.
           </p>
           <div className="footer-contact">
-            <p>📍 Rua Exemplo, 123 - Centro</p>
-            <p>Caxias do Sul - RS</p>
-            <p>📞 (54) 99999-9999</p>
+            <p>📍 R. Quinze de Janeiro, 373 - Sala 604</p>
+            <p>Centro, Canoas - RS, 9210-300</p>
+            <p>📞 (51) 3031-1020 </p>
           </div>
         </div>
         <div className="footer-links">

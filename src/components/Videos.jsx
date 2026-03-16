@@ -56,7 +56,7 @@ const Videos = () => {
         </div>
         <div className="videos-cta">
           <a 
-            href="https://wa.me/5554999999999" 
+            href="https://wa.me/555130311020" 
             className="video-cta-btn"
             target="_blank"
             rel="noopener noreferrer"

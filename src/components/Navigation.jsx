@@ -4,6 +4,7 @@ import ToothIcon from '../assets/icons/tooth.svg';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -12,6 +13,22 @@ const Navigation = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  const toggleServices = () => {
+    setIsServicesOpen(!isServicesOpen);
+  };
+
+  const closeServices = () => {
+    setIsServicesOpen(false);
+    closeMenu();
+  };
+
+  const services = [
+    { label: 'Antes e Depois', link: '#antes-depois' },
+    { label: 'Dentaduras', link: '#dentaduras' },
+    { label: 'Resultados', link: '#resultados' },
+    { label: 'Procedimentos', link: '#procedimentos' }
+  ];
 
   return (
     <nav className="navbar">
@@ -28,7 +45,19 @@ const Navigation = () => {
         </button>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <li><a href="#services" onClick={closeMenu}>Serviços</a></li>
+          <li className="nav-item-with-dropdown">
+            <button className="nav-link-button" onClick={toggleServices}>
+              Serviços
+              <span className={`dropdown-arrow ${isServicesOpen ? 'active' : ''}`}>▼</span>
+            </button>
+            <div className={`dropdown-menu ${isServicesOpen ? 'active' : ''}`}>
+              {services.map((service, index) => (
+                <a key={index} href={service.link} className="dropdown-link" onClick={closeServices}>
+                  {service.label}
+                </a>
+              ))}
+            </div>
+          </li>
           <li><a href="#about" onClick={closeMenu}>Sobre</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contato</a></li>
           <li><a href="#contact" className="nav-cta" onClick={closeMenu}>Agendar Consulta</a></li>

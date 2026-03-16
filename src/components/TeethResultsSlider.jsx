@@ -18,7 +18,7 @@ export default function TeethResultsSlider() {
   ];
 
   return (
-    <section className="gallery-section teeth-section">
+    <section id="resultados" className="gallery-section teeth-section">
       <div className="section-container">
         <h2 className="section-title">Resultados Dentários</h2>
         <p className="section-subtitle">Dentes brancos e saudáveis</p>

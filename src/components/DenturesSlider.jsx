@@ -16,7 +16,7 @@ export default function DenturesSlider() {
   ];
 
   return (
-    <section className="gallery-section dentures-section">
+    <section id="dentaduras" className="gallery-section dentures-section">
       <div className="section-container">
         <h2 className="section-title">Dentaduras</h2>
         <p className="section-subtitle">Soluções completas para sua saúde bucal</p>

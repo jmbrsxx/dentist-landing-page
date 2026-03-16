@@ -1,12 +1,13 @@
 import React from 'react';
 import './FloatingButtons.css';
 import WhatsAppIcon from '../assets/icons/whatsapp.svg';
+import PhoneIcon from '../assets/icons/phone.svg';
 
 const FloatingButtons = () => {
   return (
     <div className="floating-buttons">
       <a 
-        href="https://wa.me/5554999999999" 
+        href="https://wa.me/555130311020" 
         className="floating-btn whatsapp-btn"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,11 +16,11 @@ const FloatingButtons = () => {
         <img src={WhatsAppIcon} alt="WhatsApp" className="floating-btn-icon" />
       </a>
       <a 
-        href="tel:5459999999999" 
+        href="tel:555130311020" 
         className="floating-btn call-btn"
         aria-label="Ligar"
       >
-        <span className="floating-btn-icon">📞</span>
+        <img src={PhoneIcon} alt="Telefone" className="floating-btn-icon" />
       </a>
     </div>
   );

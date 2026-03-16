@@ -30,7 +30,7 @@ export default function TreatmentVideosSlider() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="treatment-videos-section">
+    <section id="procedimentos" className="treatment-videos-section">
       <div className="section-container">
         <h2 className="section-title">Procedimentos em Ação</h2>
         <p className="section-subtitle">Veja nossos tratamentos dentários em movimento</p>

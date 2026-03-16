@@ -69,6 +69,85 @@
   box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
 }
 
+.nav-item-with-dropdown {
+  position: relative;
+}
+
+.nav-link-button {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  padding: 0;
+}
+
+.nav-link-button:hover {
+  color: var(--gold-primary);
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.dropdown-arrow.active {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 10, 0.95) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 8px;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--gold-primary);
+  padding-left: 2rem;
+}
+
+.dropdown-link:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-link:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -152,5 +231,54 @@
 
   .nav-logo-icon {
     width: 100px;
+  }
+
+  .nav-item-with-dropdown {
+    width: 100%;
+  }
+
+  .nav-link-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1.2rem 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    background: rgba(212, 175, 55, 0.05);
+    border: none;
+    margin: 0;
+    padding: 0 !important;
+    box-shadow: none;
+    min-width: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    max-height: 500px;
+  }
+
+  .dropdown-link {
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    background: rgba(212, 175, 55, 0.05);
+  }
+
+  .dropdown-link:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-link:hover {
+    padding-left: 1.5rem;
+    background: rgba(212, 175, 55, 0.1);
   }
 }
