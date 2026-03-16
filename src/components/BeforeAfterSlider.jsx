@@ -16,8 +16,6 @@ export default function BeforeAfterSlider() {
     'antes e depois (3).jpeg',
     'antes e depois (4).jpeg',
     'antes e depois (5).jpeg',
-    'antes e depois (6).jpeg',
-    'antes e depois (7).jpeg',
     'antes e depois (8).jpeg',
     'antes e depois (9).jpeg',
   ];

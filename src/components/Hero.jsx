@@ -44,7 +44,6 @@ const Hero = () => {
           <div className="hero-video-placeholder">
             <video 
               src={`${BASE_URL}videos/marketing.mp4`}
-              controls
               autoPlay
               muted
               loop
