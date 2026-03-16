@@ -1,6 +1,6 @@
 .about {
   padding: 5rem 2rem;
-  background: white;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
 }
 
 .about-container {
@@ -26,7 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 60px rgba(0, 184, 148, 0.25);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.25);
+  border: 3px solid var(--gold-dark);
 }
 
 .about-dentist-img {
@@ -41,20 +42,20 @@
 
 .about-title {
   font-size: 2.2rem;
-  color: #1a1a1a;
+  color: var(--gold-primary);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .about-text {
   font-size: 1.05rem;
-  color: #555;
+  color: #aaa;
   line-height: 1.8;
   margin-bottom: 1.2rem;
 }
 
 .about-text strong {
-  color: #00b894;
+  color: var(--gold-primary);
 }
 
 .about-features {
@@ -67,14 +68,14 @@
   gap: 0.8rem;
   margin-bottom: 0.8rem;
   font-size: 1rem;
-  color: #333;
+  color: var(--white);
 }
 
 .feature-check {
   width: 24px;
   height: 24px;
-  background: #00b894;
-  color: white;
+  background: var(--gold-gradient);
+  color: #0a0a0a;
   border-radius: 50%;
   display: flex;
   align-items: center;

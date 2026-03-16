@@ -15,14 +15,14 @@ const FinalCTA = () => {
           Cuide do seu sorriso hoje mesmo
         </h2>
         <p className="final-cta-subtitle">
-          Agende sua consulta e descubra como é fácil ter um sorriso saudável e bonito
+          Agende sua consulta na NovaOdonto e descubra como é fácil ter um sorriso saudável e bonito
         </p>
         <div className="final-cta-buttons">
           <a href="#contact" className="cta-primary">
             📅 Agendar Consulta
           </a>
           <a 
-            href="https://wa.me/55519999999999999999" 
+            href="https://wa.me/5554999999999" 
             className="cta-whatsapp"
             target="_blank"
             rel="noopener noreferrer"

@@ -1,6 +1,6 @@
 .differentials {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f0f9f7 0%, #e8f5f3 100%);
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
 }
 
 .differentials-container {
@@ -11,7 +11,7 @@
 .differentials-title {
   font-size: 2.2rem;
   text-align: center;
-  color: #1a1a1a;
+  color: var(--gold-primary);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -19,7 +19,7 @@
 .differentials-subtitle {
   text-align: center;
   font-size: 1.1rem;
-  color: #666;
+  color: var(--gray);
   margin-bottom: 3rem;
 }
 
@@ -30,17 +30,19 @@
 }
 
 .differential-card {
-  background: white;
+  background: var(--black-secondary);
   padding: 2rem 1.5rem;
   border-radius: 16px;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .differential-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 184, 148, 0.15);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-primary);
 }
 
 .differential-icon {
@@ -51,17 +53,18 @@
 .differential-icon img {
   width: 56px;
   height: 56px;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
 }
 
 .differential-title {
   font-size: 1.1rem;
-  color: #1a1a1a;
+  color: var(--white);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .differential-description {
-  color: #666;
+  color: #aaa;
   font-size: 0.9rem;
   line-height: 1.5;
 }

@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section id="contact" className={`contact fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="contact-container">
-        <h2 className="contact-title">Agende sua Consulta online</h2>
+        <h2 className="contact-title">Agende sua Consulta na NovaOdonto</h2>
         <p className="contact-subtitle">
           Tire suas dúvidas e marque seu atendimento
         </p>
@@ -24,14 +24,14 @@ const Contact = () => {
               <span className="info-icon">📍</span>
               <div>
                 <h4>Endereço</h4>
-                <p>XXXXXXXXXXXXXXXXXX<br />Caxias do Sul - RS</p>
+                <p>Rua Exemplo, 123 - Centro<br />Caxias do Sul - RS</p>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">📞</span>
               <div>
                 <h4>Telefone</h4>
-                <p>(51) XXXXXXXX</p>
+                <p>(54) 99999-9999</p>
               </div>
             </div>
             <div className="info-item">
@@ -45,15 +45,15 @@ const Contact = () => {
               <img src={WhatsAppIcon} alt="WhatsApp" className="info-icon-img" />
               <div>
                 <h4>WhatsApp</h4>
-                <p>(51) XXXXXX</p>
+                <p>(54) 99999-9999</p>
               </div>
             </div>
             <div className="contact-cta-buttons">
-              <a href="tel:0000000000" className="cta-btn cta-call">
+              <a href="tel:54999999999" className="cta-btn cta-call">
                 📞 Ligar agora
               </a>
               <a 
-                href="https://wa.me/55510000000000000" 
+                href="https://wa.me/5554999999999" 
                 className="cta-btn cta-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,7 +81,7 @@ const Contact = () => {
                 id="phone" 
                 name="phone" 
                 required 
-                placeholder="(51) 99999-9999"
+                placeholder="(54) 99999-9999"
               />
             </div>
             <div className="form-group">
@@ -121,7 +121,7 @@ const Contact = () => {
         </div>
         <div className="contact-map">
           <iframe 
-            src="https://www.google.com/maps?q=Avenida+Brasil+500+Centro+Passo+Fundo+RS+Brazil&output=embed" 
+            src="https://www.google.com/maps?q=Rua+Exemplo+123+Caxias+do+Sul+RS+Brazil&output=embed" 
             width="100%" 
             height="350" 
             style={{border: 0, borderRadius: '12px'}} 

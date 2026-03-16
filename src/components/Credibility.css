@@ -1,6 +1,6 @@
 .credibility {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
 }
 
 .credibility-container {
@@ -11,7 +11,7 @@
 .credibility-title {
   font-size: 2.5rem;
   text-align: center;
-  color: #1a1a1a;
+  color: var(--gold-primary);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -19,7 +19,7 @@
 .credibility-subtitle {
   text-align: center;
   font-size: 1.1rem;
-  color: #666;
+  color: var(--gray);
   margin-bottom: 3rem;
 }
 
@@ -31,13 +31,13 @@
 }
 
 .counter-card {
-  background: white;
+  background: var(--black-secondary);
   padding: 2.5rem 2rem;
   border-radius: 20px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 2px solid transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.2);
   min-width: 280px;
   position: relative;
   overflow: hidden;
@@ -50,15 +50,15 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #00b894, #00cec9);
+  background: var(--gold-gradient);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
 
 .counter-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0, 184, 148, 0.2);
-  border-color: #00b894;
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2);
+  border-color: var(--gold-primary);
 }
 
 .counter-card:hover::before {
@@ -73,6 +73,7 @@
   width: 72px;
   height: 72px;
   transition: transform 0.4s ease;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
 }
 
 .counter-card:hover .counter-icon img {
@@ -88,14 +89,14 @@
 .counter-value {
   font-size: 3rem;
   font-weight: 800;
-  color: #00b894;
+  color: var(--gold-primary);
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
 
 .counter-label {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--gray);
   font-weight: 500;
 }
 

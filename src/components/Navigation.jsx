@@ -7,8 +7,8 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#" className="nav-logo">
-          <img src={ToothIcon} alt="Logo" className="nav-logo-icon" />
-          Dentista XXXXXXX 
+          <img src='public/images/novaodontologo.png' alt="Logo" className="nav-logo-icon" />
+          NovaOdonto
         </a>
         <ul className="nav-menu">
           <li><a href="#services">Serviços</a></li>

@@ -1,7 +1,8 @@
 .footer {
-  background: #2c3e50;
-  color: white;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: var(--white);
   padding: 4rem 2rem 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .footer-container {
@@ -15,13 +16,22 @@
 .footer-logo {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #667eea;
+  color: var(--gold-primary);
+  font-weight: 700;
 }
 
 .footer-tagline {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--gray);
   margin-bottom: 1.5rem;
   line-height: 1.6;
+}
+
+.footer-contact {
+  color: var(--gray);
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
 }
 
 .footer-social {
@@ -42,6 +52,7 @@
 .footer-services h4 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  color: var(--gold-primary);
 }
 
 .footer-links ul,
@@ -58,23 +69,23 @@
 
 .footer-links a,
 .footer-services a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--gray);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover,
 .footer-services a:hover {
-  color: #667eea;
+  color: var(--gold-primary);
 }
 
 .footer-bottom {
   max-width: 1200px;
   margin: 3rem auto 0;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--gray);
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 .testimonials {
   padding: 5rem 2rem;
-  background: white;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
 }
 
 .testimonials-container {
@@ -11,7 +11,7 @@
 .testimonials-title {
   font-size: 2.2rem;
   text-align: center;
-  color: #1a1a1a;
+  color: var(--gold-primary);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -19,7 +19,7 @@
 .testimonials-subtitle {
   text-align: center;
   font-size: 1.1rem;
-  color: #666;
+  color: var(--gray);
   margin-bottom: 2rem;
 }
 
@@ -40,11 +40,11 @@
 .rating-value {
   font-size: 2rem;
   font-weight: 800;
-  color: #00b894;
+  color: var(--gold-primary);
 }
 
 .rating-count {
-  color: #666;
+  color: var(--gray);
   font-size: 0.95rem;
 }
 
@@ -56,18 +56,18 @@
 }
 
 .testimonial-card {
-  background: #f8f9fa;
+  background: var(--black-secondary);
   padding: 1.8rem;
   border-radius: 12px;
   text-align: left;
   transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .testimonial-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  border-color: #00b894;
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-primary);
 }
 
 .testimonial-rating {
@@ -77,7 +77,7 @@
 }
 
 .testimonial-text {
-  color: #444;
+  color: #aaa;
   font-size: 0.95rem;
   line-height: 1.6;
   font-style: italic;
@@ -85,7 +85,7 @@
 }
 
 .testimonial-name {
-  color: #00b894;
+  color: var(--gold-primary);
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -99,18 +99,17 @@
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  background: white;
-  color: #1a1a1a;
+  background: var(--gold-gradient);
+  color: #0a0a0a;
   text-decoration: none;
   border-radius: 10px;
   font-weight: 600;
-  border: 2px solid #e0e0e0;
   transition: all 0.3s ease;
 }
 
 .google-review-btn:hover {
-  border-color: #00b894;
-  color: #00b894;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
 }
 
 @media (max-width: 768px) {

@@ -1,17 +1,33 @@
 .final-cta {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
 }
 
 .final-cta-container {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .final-cta-title {
   font-size: 2.2rem;
-  color: white;
+  color: var(--gold-primary);
   margin-bottom: 1rem;
   font-weight: 700;
   display: flex;
@@ -23,6 +39,7 @@
 .cta-tooth-icon {
   width: 40px;
   height: 40px;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
 }
 
 .cta-chat-icon {
@@ -32,7 +49,7 @@
 
 .final-cta-subtitle {
   font-size: 1.15rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--gray);
   margin-bottom: 2.5rem;
   line-height: 1.6;
 }
@@ -46,8 +63,8 @@
 
 .cta-primary {
   padding: 1rem 2rem;
-  background: white;
-  color: #00b894;
+  background: var(--gold-gradient);
+  color: #0a0a0a;
   text-decoration: none;
   border-radius: 12px;
   font-weight: 600;
@@ -57,12 +74,12 @@
 
 .cta-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
 }
 
 .cta-whatsapp {
   padding: 1rem 2rem;
-  background: #25d366;
+  background: #25D366;
   color: white;
   text-decoration: none;
   border-radius: 12px;
@@ -75,10 +92,8 @@
 }
 
 .cta-whatsapp:hover {
-  background: #ffffff;
-  color: #25d366;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
 }
 
 .cta-whatsapp .cta-chat-icon {

@@ -6,14 +6,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h3 className="footer-logo">Clínica XXXXXXXX</h3>
+          <h3 className="footer-logo">NovaOdonto</h3>
           <p className="footer-tagline">
             Sua clínica de confiança para cuidar do seu sorriso em Caxias do Sul.
           </p>
           <div className="footer-contact">
-            <p>📍 R. XXXXXXXXXXXX</p>
+            <p>📍 Rua Exemplo, 123 - Centro</p>
             <p>Caxias do Sul - RS</p>
-            <p>📞 (51) XXXXXXXXX</p>
+            <p>📞 (54) 99999-9999</p>
           </div>
         </div>
         <div className="footer-links">
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Clínica XXXXXXXX. Todos os direitos reservados.</p>
+        <p>© {new Date().getFullYear()} NovaOdonto. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

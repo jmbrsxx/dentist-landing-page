@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Credibility from './components/Credibility';
-import Services from './components/Services';
+import BeforeAfterSlider from './components/BeforeAfterSlider';
+import DenturesSlider from './components/DenturesSlider';
+import TeethResultsSlider from './components/TeethResultsSlider';
+import BracesSlider from './components/BracesSlider';
+import TreatmentVideosSlider from './components/TreatmentVideosSlider';
 import About from './components/About';
 import Differentials from './components/Differentials';
 import Testimonials from './components/Testimonials';
@@ -34,7 +38,11 @@ function App() {
       <Navigation />
       <Hero />
       <Credibility />
-      <Services />
+      <BeforeAfterSlider />
+      <DenturesSlider />
+      <TeethResultsSlider />
+      <BracesSlider />
+      <TreatmentVideosSlider />
       <About />
       <Differentials />
       <Testimonials />

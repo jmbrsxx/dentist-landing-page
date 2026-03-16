@@ -6,7 +6,7 @@ const FloatingButtons = () => {
   return (
     <div className="floating-buttons">
       <a 
-        href="https://wa.me/55599999999999999" 
+        href="https://wa.me/5554999999999" 
         className="floating-btn whatsapp-btn"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,7 +15,7 @@ const FloatingButtons = () => {
         <img src={WhatsAppIcon} alt="WhatsApp" className="floating-btn-icon" />
       </a>
       <a 
-        href="tel:513043213432133333333333" 
+        href="tel:5459999999999" 
         className="floating-btn call-btn"
         aria-label="Ligar"
       >
