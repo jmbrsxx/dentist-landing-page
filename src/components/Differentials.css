@@ -78,3 +78,82 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
+
+.differentials-intro {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #d0d0d0;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.differentials-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+}
+
+.highlight-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.highlight-title {
+  font-size: 1.1rem;
+  color: var(--gold-primary);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.highlight-description {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.differentials-closing {
+  text-align: center;
+  font-size: 1rem;
+  color: #d0d0d0;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+  .differentials-intro,
+  .differentials-closing {
+    font-size: 0.95rem;
+  }
+
+  .differentials-highlights {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .highlight-card {
+    padding: 1.5rem;
+  }
+}

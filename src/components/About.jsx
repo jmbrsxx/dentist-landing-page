@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-image">
           <div className="about-image-placeholder">
             <img 
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&h=600&fit=crop" 
+              src="images/sobre.jpeg" 
               alt="Dentista Profissional Clínica NovaOdonto" 
               className="about-dentist-img" 
             />

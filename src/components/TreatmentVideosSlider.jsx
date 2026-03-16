@@ -74,7 +74,9 @@ export default function TreatmentVideosSlider() {
                     <video
                       width="100%"
                       height="100%"
-                      controls
+                      autoPlay
+                      muted
+                      loop
                     >
                       <source src={`${BASE_URL}videos/${video}`} type="video/mp4" />
                       Seu navegador não suporta vídeos.
