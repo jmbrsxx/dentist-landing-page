@@ -19,38 +19,38 @@ const Services = () => {
   const services = [
     {
       icon: ToothIcon,
-      title: 'Limpeza Dental',
-      description: 'Remove placa bacteriana e tártaro para manter seus dentes saudáveis e gengivas em bom estado.',
+      title: 'Limpeza Profissional',
+      description: 'Remove placa bacteriana, tártaro e manchas para manter seus dentes saudáveis, gengivas em perfeito estado e prevenir problemas periodontais.',
       button: 'Saiba mais'
     },
     {
       icon: SparkleIcon,
       title: 'Clareamento Dental',
-      description: 'Deixe seu sorriso mais branco e brilhante com técnicas seguras e eficientes.',
+      description: 'Deixe seu sorriso mais branco e brilhante com técnicas seguras, eficientes e aprovadas. Resultados visíveis em poucos dias.',
       button: 'Saiba mais'
     },
     {
       icon: ToolIcon,
       title: 'Tratamento de Canal',
-      description: 'Salve dentes comprometidas com procedimentos modernos e sem dor.',
+      description: 'Salve dentes comprometidas com procedimentos modernos, minimamente invasivos e praticamente indolores. Receba atendimento especializado.',
       button: 'Saiba mais'
     },
     {
       icon: BoneIcon,
       title: 'Extração Dentária',
-      description: 'Procedimentos seguros e indolores para remoção de dentes com segurança.',
+      description: 'Procedimentos seguros, indolores e delicados para remoção de dentes com segurança máxima e recuperação rápida.'
       button: 'Saiba mais'
     },
     {
       icon: DiamondIcon,
       title: 'Implantes Dentários',
-      description: 'Recupere a função e estética dos dentes perdidos com implantes de qualidade.',
+      description: 'Recupere a função e estética dos dentes perdidos com implantes de qualidade premium. Solução duradoura para uma dentição completa.',
       button: 'Saiba mais'
     },
     {
       icon: ElderlyIcon,
-      title: 'Atendimento para Idosos',
-      description: 'Carecimento especial e adaptado para pacientes da terceira idade.',
+      title: 'Atendimento Geriátrico',
+      description: 'Atendimento especial e adaptado para pacientes da terceira idade. Cuidado humanizado com atenção às necessidades específicas.',
       button: 'Saiba mais'
     }
   ];

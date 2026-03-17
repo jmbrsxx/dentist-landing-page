@@ -1,10 +1,18 @@
 User-agent: *
 Allow: /
-Allow: /index.html
-Allow: /images/
-Allow: /videos/
-Disallow: /node_modules/
-Disallow: /dist/
-Disallow: /.git/
+Disallow: /private/
+Disallow: /*.json$
 
+# Sitemap location
 Sitemap: https://jmbrsxx.github.io/dentist-landing-page/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Specific rules for Google
+User-agent: Googlebot
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Crawl-delay: 1

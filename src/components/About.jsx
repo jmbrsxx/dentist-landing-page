@@ -12,7 +12,7 @@ const About = () => {
           <div className="about-image-placeholder">
             <img 
               src="images/sobre.jpeg" 
-              alt="Equipe profissional da clínica NovaOdonto em Canoas - Odontologia especializada" 
+              alt="Dentista Profissional Clínica NovaOdonto" 
               className="about-dentist-img" 
             />
           </div>

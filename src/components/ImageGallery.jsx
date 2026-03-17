@@ -3,12 +3,12 @@ import './ImageGallery.css';
 
 const ImageGallery = () => {
   const images = [
-    { src: '/images/treatment-before-after-1.jpg', alt: 'Before & After Treatment 1' },
-    { src: '/images/treatment-before-after-2.jpg', alt: 'Before & After Treatment 2' },
-    { src: '/images/clinic-interior-1.jpg', alt: 'Modern Clinic Facilities' },
-    { src: '/images/team-photo.jpg', alt: 'Professional Dental Team' },
-    { src: '/images/treatment-smile-1.jpg', alt: 'Smile Transformation 1' },
-    { src: '/images/equipment-modern.jpg', alt: 'Advanced Dental Equipment' },
+    { src: '/images/treatment-before-after-1.jpg', alt: 'Antes e Depois - Implante Dentário NovaOdonto' },
+    { src: '/images/treatment-before-after-2.jpg', alt: 'Resultado de Tratamento Odontológico em Canoas' },
+    { src: '/images/clinic-interior-1.jpg', alt: 'Clínica NovaOdonto - Espaço Moderno em Canoas' },
+    { src: '/images/team-photo.jpg', alt: 'Equipe Profissional de Dentistas NovaOdonto' },
+    { src: '/images/treatment-smile-1.jpg', alt: 'Transformação de Sorriso - Estética Dental' },
+    { src: '/images/equipment-modern.jpg', alt: 'Equipamentos Modernos Clínica Odontológica' },
   ];
 
   return (
