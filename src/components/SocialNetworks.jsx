@@ -42,19 +42,18 @@ const SocialNetworks = () => {
           <p className="social-subtitle">
             Acompanhe nosso dia a dia, dicas de saúde bucal e resultados incríveis de nossos pacientes
           </p>
-          <div className="social-icons-container">
+          <div className="social-links">
             {socialLinks.map((social, index) => (
               <a 
                 key={index}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-link"
+                className="social-link-item"
                 title={social.name}
-                style={{ color: social.color }}
               >
-                <i className={social.icon}></i>
-                <span className="social-icon-label">{social.name}</span>
+                <i className={social.icon} style={{ color: social.color }}></i>
+                <span>{social.name}</span>
               </a>
             ))}
           </div>
