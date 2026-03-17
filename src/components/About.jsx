@@ -12,7 +12,7 @@ const About = () => {
           <div className="about-image-placeholder">
             <img 
               src="images/sobre.jpeg" 
-              alt="Dentista Profissional Clínica NovaOdonto" 
+              alt="Equipe profissional da clínica NovaOdonto em Canoas - Odontologia especializada" 
               className="about-dentist-img" 
             />
           </div>
@@ -31,15 +31,15 @@ const About = () => {
           </p>
           <div className="about-features">
             <div className="feature-item">
-              <span className="feature-check">✓</span>
+              <i className="fas fa-check"></i>
               <span>Mais de 10 anos de experiência</span>
             </div>
             <div className="feature-item">
-              <span className="feature-check">✓</span>
+              <i className="fas fa-check"></i>
               <span>Atendimento humanizado</span>
             </div>
             <div className="feature-item">
-              <span className="feature-check">✓</span>
+              <i className="fas fa-check"></i>
               <span>Equipamentos modernos</span>
             </div>
           </div>

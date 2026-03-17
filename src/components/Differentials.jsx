@@ -9,17 +9,17 @@ const Differentials = () => {
     {
       title: 'Excelência Comprovada',
       description: 'Avaliação 5,0 estrelas no Google com mais de 147 pacientes satisfeitos',
-      icon: '⭐'
+      icon: 'fa-star'
     },
     {
       title: 'Profissionais Especializados',
       description: 'Equipe com formação especializada e experiência comprovada em todas as áreas',
-      icon: '👨‍⚕️'
+      icon: 'fa-user-md'
     },
     {
       title: 'Atendimento Humanizado',
       description: 'Cuidado personalizado e atenção individualizada para cada paciente',
-      icon: '💜'
+      icon: 'fa-heart'
     }
   ];
 
@@ -34,8 +34,8 @@ const Differentials = () => {
 
         <div className="differentials-highlights">
           {highlights.map((item, index) => (
-            <div key={index} className={`highlight-card fade-in-section delay-${index + 1} ${isVisible ? 'is-visible' : ''}`}>
-              <div className="highlight-icon">{item.icon}</div>
+            <div key={index} className={`highlight-card fade-in-section ${isVisible ? 'is-visible' : ''}`}>
+              <div className="highlight-icon"><i className={`fas ${item.icon}`}></i></div>
               <h3 className="highlight-title">{item.title}</h3>
               <p className="highlight-description">{item.description}</p>
             </div>

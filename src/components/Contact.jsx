@@ -17,21 +17,21 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info-grid">
             <div className="info-item">
-              <span className="info-icon">📍</span>
+              <i className="fas fa-map-marker-alt info-icon"></i>
               <div>
                 <h4>Endereço</h4>
                 <p>R. Quinze de Janeiro, 373 - Sala 604 - Centro<br />Centro, Canoas - RS, 92010-300</p>
               </div>
             </div>
             <div className="info-item">
-              <span className="info-icon">📞</span>
+              <i className="fas fa-phone info-icon"></i>
               <div>
                 <h4>Telefone</h4>
                 <p>(51) 3031-1020</p>
               </div>
             </div>
             <div className="info-item">
-              <span className="info-icon">🕒</span>
+              <i className="fas fa-clock info-icon"></i>
               <div>
                 <h4>Horário de Funcionamento</h4>
                 <p>Segunda a Sexta: 9h às 20h<br />Sábado: 9h às 13h</p>

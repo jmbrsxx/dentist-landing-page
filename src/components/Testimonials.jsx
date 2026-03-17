@@ -36,7 +36,7 @@ const Testimonials = () => {
           Avaliações reais de quem confia no nosso trabalho
         </p>
         <div className="testimonials-rating">
-          <span className="rating-stars">⭐⭐⭐⭐⭐</span>
+          <div className="rating-stars"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
           <span className="rating-value">5,0</span>
           <span className="rating-count">Baseado em 147+ avaliações no Google</span>
         </div>
@@ -44,7 +44,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className={`testimonial-card fade-in-section delay-${index + 1} ${isVisible ? 'is-visible' : ''}`}>
               <div className="testimonial-rating">
-                {'⭐'.repeat(testimonial.rating)}
+                {[...Array(testimonial.rating)].map((_, i) => <i key={i} className="fas fa-star"></i>)}
               </div>
               <p className="testimonial-text">"{testimonial.text}"</p>
               <p className="testimonial-name">- {testimonial.name}</p>
@@ -58,7 +58,7 @@ const Testimonials = () => {
             rel="noopener noreferrer"
             className="google-review-btn"
           >
-            ⭐ Deixar avaliação no Google
+            <i className="fas fa-star"></i> Deixar avaliação no Google
           </a>
         </div>
       </div>

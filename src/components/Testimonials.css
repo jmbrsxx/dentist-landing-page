@@ -25,6 +25,22 @@
 
 .testimonials-rating {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.rating-stars {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: var(--gold-primary);
+}
+
+.rating-stars i {
+  color: var(--gold-primary);
+}
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
@@ -74,6 +90,12 @@
   font-size: 1rem;
   margin-bottom: 0.8rem;
   letter-spacing: 2px;
+  color: var(--gold-primary);
+}
+
+.testimonial-rating i {
+  color: var(--gold-primary);
+  margin-right: 2px;
 }
 
 .testimonial-text {

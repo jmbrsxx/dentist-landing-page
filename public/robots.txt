@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /images/
+Allow: /videos/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /.git/
+
+Sitemap: https://jmbrsxx.github.io/dentist-landing-page/sitemap.xml

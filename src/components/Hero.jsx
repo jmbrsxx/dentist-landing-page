@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <div className="hero-badge">
-          <span className="badge-star">⭐</span>
+          <i className="fas fa-star"></i>
           <span>5,0 estrelas</span>
           <span className="badge-divider">•</span>
           <span>147+ avaliações</span>
@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
         <div className="hero-buttons">
           <a href="#contact" className="btn btn-primary">
-            <span className="btn-icon">📅</span>
+            <i className="fas fa-calendar-alt"></i>
             Agendar consulta
           </a>
           <a 
@@ -36,11 +36,20 @@ const Hero = () => {
             Falar no WhatsApp
           </a>
           <a href="tel:555130311020" className="btn btn-secondary">
-            <span className="btn-icon">📞</span>
+            <i className="fas fa-phone"></i>
             Ligar agora
           </a>
         </div>
         <div className="hero-image-container">
+          <div className="hero-video-background">
+            <video 
+              src={`${BASE_URL}videos/marketing.mp4`}
+              autoPlay
+              muted
+              loop
+              className="hero-video-blur" 
+            />
+          </div>
           <div className="hero-video-placeholder">
             <video 
               src={`${BASE_URL}videos/marketing.mp4`}

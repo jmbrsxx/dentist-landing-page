@@ -32,6 +32,17 @@
 
 .footer-contact p {
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact i {
+  color: var(--gold-primary);
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social {

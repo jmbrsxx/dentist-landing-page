@@ -115,6 +115,11 @@
   font-size: 2.8rem;
   margin-bottom: 1rem;
   display: inline-block;
+  color: var(--gold-primary);
+}
+
+.highlight-icon i {
+  color: var(--gold-primary);
 }
 
 .highlight-title {

@@ -44,6 +44,17 @@
   transition: all 0.3s ease;
 }
 
+.info-item i {
+  color: var(--gold-primary);
+  font-size: 1.8rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .info-item:hover {
   border-color: var(--gold-primary);
   box-shadow: 0 8px 24px rgba(212, 175, 55, 0.1);

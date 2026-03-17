@@ -15,7 +15,6 @@ const CounterCard = ({ icon, count, suffix, label, delay = 0 }) => {
   return (
     <div className="counter-card" ref={ref}>
       <div className="counter-icon">
-        <img src={icon} alt={label} />
       </div>
       <div className="counter-content">
         <span className="counter-value">
@@ -61,7 +60,6 @@ const Credibility = () => {
             delay={0.3}
           />
           <CounterCard 
-            icon={DentistIcon} 
             count={1200} 
             suffix="+" 
             label="Implantes Realizados" 
