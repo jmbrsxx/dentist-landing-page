@@ -12,25 +12,25 @@ const SocialNetworks = () => {
       name: 'Facebook',
       icon: 'fab fa-facebook-f',
       url: 'https://www.facebook.com/novaodontocanoas',
-      color: '#1877F2'
+      link: 'facebook.com/novaodontocanoas'
     },
     {
       name: 'Instagram',
       icon: 'fab fa-instagram',
       url: 'https://www.instagram.com/novaodontocanoas',
-      color: '#E4405F'
+      link: 'instagram.com/novaodontocanoas'
     },
     {
       name: 'WhatsApp',
       icon: 'fab fa-whatsapp',
       url: 'https://wa.me/555130311020',
-      color: '#25D366'
+      link: 'wa.me/555130311020'
     },
     {
       name: 'Email',
       icon: 'fas fa-envelope',
       url: 'mailto:contato@novaodontocanoas.com.br',
-      color: '#d4af37'
+      link: 'contato@novaodontocanoas.com.br'
     }
   ];
 
@@ -42,7 +42,7 @@ const SocialNetworks = () => {
           <p className="social-subtitle">
             Acompanhe nosso dia a dia, dicas de saúde bucal e resultados incríveis de nossos pacientes
           </p>
-          <div className="social-icons">
+          <div className="social-icons-links">
             {socialLinks.map((social, index) => (
               <a 
                 key={index}
@@ -53,7 +53,7 @@ const SocialNetworks = () => {
                 title={social.name}
               >
                 <i className={social.icon}></i>
-                <span className="social-icon-name">{social.name}</span>
+                <span className="social-link-text">{social.link}</span>
               </a>
             ))}
           </div>
@@ -61,15 +61,6 @@ const SocialNetworks = () => {
         
         <div className="social-video-container">
           <div className="social-video-placeholder">
-            <div className="social-video-blur-background">
-              <video 
-                src={`${BASE_URL}videos/marketing.mp4`}
-                autoPlay
-                muted
-                loop
-                className="social-video-blur" 
-              />
-            </div>
             <video 
               src={`${BASE_URL}videos/marketing.mp4`}
               autoPlay
