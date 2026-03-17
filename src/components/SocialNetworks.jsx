@@ -1,23 +1,23 @@
 import React from 'react';
-import './SocialMedia.css';
+import './SocialNetworks.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const BASE_URL = import.meta.env.BASE_URL;
 
-const SocialMedia = () => {
+const SocialNetworks = () => {
   const [ref, isVisible] = useScrollAnimation();
 
   const socialLinks = [
     {
       name: 'Facebook',
       icon: 'fab fa-facebook-f',
-      url: 'https://facebook.com/novaodontocanoas',
+      url: 'https://www.facebook.com/novaodontocanoas',
       color: '#1877F2'
     },
     {
       name: 'Instagram',
       icon: 'fab fa-instagram',
-      url: 'https://instagram.com/novaodontocanoas',
+      url: 'https://www.instagram.com/novaodontocanoas',
       color: '#E4405F'
     },
     {
@@ -30,42 +30,37 @@ const SocialMedia = () => {
       name: 'Email',
       icon: 'fas fa-envelope',
       url: 'mailto:contato@novaodontocanoas.com.br',
-      color: '#EA4C89'
+      color: '#d4af37'
     }
   ];
 
   return (
-    <section id="social-media" className={`social-media fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
-      <div className="social-media-container">
-        <div className="social-media-content">
-          <h2 className="social-media-title">Siga Nossas Redes Sociais</h2>
-          <p className="social-media-subtitle">
-            Acompanhe nossos conteúdos, antes e depois, dicas de saúde bucal e muito mais
+    <section id="social-networks" className={`social-networks fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
+      <div className="social-networks-container">
+        <div className="social-content">
+          <h2 className="social-title">Siga nossas Redes Sociais</h2>
+          <p className="social-subtitle">
+            Acompanhe nosso dia a dia, dicas de saúde bucal e resultados incríveis de nossos pacientes
           </p>
-          
-          <div className="social-links-grid">
+          <div className="social-links">
             {socialLinks.map((social, index) => (
-              <a
+              <a 
                 key={index}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link-btn"
-                style={{ '--social-color': social.color }}
-                title={`Visite nosso ${social.name}`}
+                className="social-link"
+                title={social.name}
+                style={{ borderColor: social.color }}
               >
                 <i className={social.icon}></i>
                 <span>{social.name}</span>
               </a>
             ))}
           </div>
-
-          <p className="social-media-text">
-            Compartilhe seu resultado e apareça no nosso feed de pacientes satisfeitos!
-          </p>
         </div>
-
-        <div className="social-media-video">
+        
+        <div className="social-video-container">
           <div className="social-video-placeholder">
             <div className="social-video-blur-background">
               <video 
@@ -90,4 +85,4 @@ const SocialMedia = () => {
   );
 };
 
-export default SocialMedia;
+export default SocialNetworks;

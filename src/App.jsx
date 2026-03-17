@@ -9,10 +9,10 @@ import BracesSlider from './components/BracesSlider';
 import TreatmentVideosSlider from './components/TreatmentVideosSlider';
 import About from './components/About';
 import Differentials from './components/Differentials';
-import SocialMedia from './components/SocialMedia';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import FinalCTA from './components/FinalCTA';
+import SocialNetworks from './components/SocialNetworks';
 import FloatingButtons from './components/FloatingButtons';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
@@ -46,10 +46,10 @@ function App() {
       <TreatmentVideosSlider />
       <About />
       <Differentials />
-      <SocialMedia />
       <Testimonials />
       <Contact />
       <FinalCTA />
+      <SocialNetworks />
       <FloatingButtons />
       <Footer />
     </div>
