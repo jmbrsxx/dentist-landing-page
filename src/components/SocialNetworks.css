@@ -39,38 +39,44 @@
   line-height: 1.6;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.social-link {
+.social-icons-container {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 18px 25px;
-  border: 2px solid #333;
-  border-radius: 15px;
-  color: var(--white);
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
-  background: rgba(212, 175, 55, 0.05);
+  cursor: pointer;
+}
+
+.social-icon-link i {
+  font-size: 3.5rem;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 15px rgba(212, 175, 55, 0.2));
+}
+
+.social-icon-label {
+  font-size: 0.95rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  color: var(--white);
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-.social-link i {
-  font-size: 1.5rem;
-  width: 30px;
-  text-align: center;
+.social-icon-link:hover i {
+  transform: translateY(-8px);
+  filter: drop-shadow(0 8px 25px currentColor);
 }
 
-.social-link:hover {
-  border-color: var(--gold-primary);
-  background: rgba(212, 175, 55, 0.1);
-  transform: translateX(10px);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+.social-icon-link:hover .social-icon-label {
+  color: currentColor;
 }
 
 .social-video-container {
@@ -145,13 +151,16 @@
     height: 300px;
   }
 
-  .social-link {
-    padding: 15px 20px;
-    font-size: 1rem;
+  .social-icons-container {
+    gap: 20px;
   }
 
-  .social-link i {
-    font-size: 1.2rem;
+  .social-icon-link i {
+    font-size: 2.8rem;
+  }
+
+  .social-icon-label {
+    font-size: 0.85rem;
   }
 }
 
@@ -168,13 +177,17 @@
     font-size: 0.95rem;
   }
 
-  .social-links {
-    gap: 12px;
+  .social-icons-container {
+    gap: 15px;
+    justify-content: center;
   }
 
-  .social-link {
-    padding: 12px 15px;
-    font-size: 0.95rem;
+  .social-icon-link i {
+    font-size: 2.2rem;
+  }
+
+  .social-icon-label {
+    font-size: 0.8rem;
   }
 
   .social-video-placeholder {
