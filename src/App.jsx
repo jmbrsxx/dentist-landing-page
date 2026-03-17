@@ -9,6 +9,7 @@ import BracesSlider from './components/BracesSlider';
 import TreatmentVideosSlider from './components/TreatmentVideosSlider';
 import About from './components/About';
 import Differentials from './components/Differentials';
+import SocialMedia from './components/SocialMedia';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import FinalCTA from './components/FinalCTA';
@@ -45,6 +46,7 @@ function App() {
       <TreatmentVideosSlider />
       <About />
       <Differentials />
+      <SocialMedia />
       <Testimonials />
       <Contact />
       <FinalCTA />

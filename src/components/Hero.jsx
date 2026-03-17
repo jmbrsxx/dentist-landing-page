@@ -40,26 +40,6 @@ const Hero = () => {
             Ligar agora
           </a>
         </div>
-        <div className="hero-image-container">
-          <div className="hero-video-placeholder">
-            <div className="hero-video-blur-background">
-              <video 
-                src={`${BASE_URL}videos/marketing.mp4`}
-                autoPlay
-                muted
-                loop
-                className="hero-video-blur" 
-              />
-            </div>
-            <video 
-              src={`${BASE_URL}videos/marketing.mp4`}
-              autoPlay
-              muted
-              loop
-              className="hero-video" 
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
