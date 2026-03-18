@@ -94,8 +94,8 @@
 
 .social-video-placeholder {
   width: 100%;
-  max-width: 600px;
-  height: 450px;
+  max-width: 450px;
+  height: 320px;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -103,36 +103,26 @@
   justify-content: center;
   box-shadow: 0 20px 60px rgba(212, 175, 55, 0.25);
   border: 2px solid var(--gold-dark);
-  background: #000;
   position: relative;
+  background: transparent;
 }
 
-.social-video-blur-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.social-video-blur {
+.video-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(20px) brightness(0.5);
-  transform: scale(1.1);
+  display: block;
+  position: absolute;
+  filter: blur(25px) brightness(0.6);
+  transform: scale(1.2);
 }
 
-.social-video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  position: relative;
-  z-index: 1;
-  display: block;
+.video-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
 }
 
 /* Responsive Design */
@@ -156,7 +146,6 @@
 
   .social-video-placeholder {
     max-width: 100%;
-    height: 350px;
   }
 
   .social-icon-link {
@@ -198,6 +187,6 @@
   }
 
   .social-video-placeholder {
-    height: 250px;
+    max-width: 100%;
   }
 }

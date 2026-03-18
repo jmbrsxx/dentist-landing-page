@@ -38,7 +38,7 @@ const Credibility = () => {
   });
 
   return (
-    <section className="credibility" ref={ref}>
+    <section id="credibilidade" className="credibility" ref={ref}>
       <div className="credibility-container">
         <h2 className="credibility-title">Nossos Números</h2>
         <p className="credibility-subtitle">
@@ -54,7 +54,7 @@ const Credibility = () => {
           />
           <CounterCard 
             icon={TrophyIcon} 
-            count={15} 
+            count={10} 
             suffix="" 
             label="Anos de Experiência" 
             delay={0.3}

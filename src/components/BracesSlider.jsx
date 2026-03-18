@@ -12,7 +12,7 @@ export default function BracesSlider() {
   const bracesImages = ['aparelho.jpeg'];
 
   return (
-    <section className="gallery-section braces-section">
+    <section id="aparelhos" className="gallery-section braces-section">
       <div className="section-container">
         <h2 className="section-title">Aparelhos Ortodônticos</h2>
         <p className="section-subtitle">Tratamento moderno para o seu sorriso</p>

@@ -12,13 +12,13 @@ const Hero = () => {
           <i className="fas fa-star"></i>
           <span>5,0 estrelas</span>
           <span className="badge-divider">•</span>
-          <span>147+ avaliações</span>
+          <span>155+ avaliações</span>
         </div>
         <h1 className="hero-title">
           <span className="highlight">NovaOdonto</span> - Dentista em Canoas
         </h1>
         <p className="hero-subtitle">
-          Mais de 147 avaliações 5 estrelas e atendimento especializado para cuidar do seu sorriso.
+          Mais de 155 avaliações 5 estrelas e atendimento especializado para cuidar do seu sorriso.
           Nossa missão é proporcionar qualidade, conforto e segurança em cada consulta.
         </p>
         <div className="hero-buttons">

@@ -24,7 +24,7 @@ const Differentials = () => {
   ];
 
   return (
-    <section className={`differentials fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
+    <section id="diferenciais" className={`differentials fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="differentials-container">
         <h2 className="differentials-title">Por que escolher a NovaOdonto?</h2>
         

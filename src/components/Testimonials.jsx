@@ -29,7 +29,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className={`testimonials fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
+    <section id="depoimentos" className={`testimonials fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="testimonials-container">
         <h2 className="testimonials-title">O que nossos pacientes dizem</h2>
         <p className="testimonials-subtitle">
@@ -38,7 +38,7 @@ const Testimonials = () => {
         <div className="testimonials-rating">
           <div className="rating-stars"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
           <span className="rating-value">5,0</span>
-          <span className="rating-count">Baseado em 147+ avaliações no Google</span>
+          <span className="rating-count">Baseado em 155+ avaliações no Google</span>
         </div>
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (

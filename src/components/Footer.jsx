@@ -21,6 +21,7 @@ const Footer = () => {
           <ul>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="#contact">Contato</a></li>
             <li><a href="#contact">Agendar Consulta</a></li>
           </ul>
@@ -28,10 +29,10 @@ const Footer = () => {
         <div className="footer-services">
           <h4>Serviços</h4>
           <ul>
-            <li><a href="#contact">Limpeza Dental</a></li>
-            <li><a href="#contact">Clareamento</a></li>
-            <li><a href="#contact">Tratamento de Canal</a></li>
-            <li><a href="#contact">Implantes</a></li>
+            <li><a href="#services">Limpeza Dental</a></li>
+            <li><a href="#procedimentos">Clareamento</a></li>
+            <li><a href="#procedimentos">Tratamento de Canal</a></li>
+            <li><a href="#procedimentos">Implantes</a></li>
           </ul>
         </div>
       </div>

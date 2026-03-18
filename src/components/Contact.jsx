@@ -34,7 +34,7 @@ const Contact = () => {
               <i className="fas fa-clock info-icon"></i>
               <div>
                 <h4>Horário de Funcionamento</h4>
-                <p>Segunda a Sexta: 9h às 20h<br />Sábado: 9h às 13h</p>
+                <p>Segunda a Sexta: 9h às 12h / 13:30h às 20h<br />Sábado e Domingo: Fechado</p>
               </div>
             </div>
           </div>

@@ -61,22 +61,22 @@ const SocialNetworks = () => {
         
         <div className="social-video-container">
           <div className="social-video-placeholder">
-            <div className="social-video-blur-background">
-              <video 
-                src={`${BASE_URL}videos/marketing.mp4`}
-                autoPlay
-                muted
-                loop
-                className="social-video-blur" 
-              />
-            </div>
             <video 
               src={`${BASE_URL}videos/marketing.mp4`}
               autoPlay
               muted
               loop
-              className="social-video" 
+              className="video-bg" 
             />
+            
+            <video 
+              src={`${BASE_URL}videos/marketing.mp4`}
+              autoPlay
+              muted
+              loop
+              className="video-main" 
+            />
+
           </div>
         </div>
       </div>

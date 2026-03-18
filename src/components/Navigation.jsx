@@ -25,7 +25,7 @@ const Navigation = () => {
 
   const services = [
     { label: 'Antes e Depois', link: '#antes-depois' },
-    { label: 'Dentaduras', link: '#dentaduras' },
+    { label: 'Próteses', link: '#dentaduras' },
     { label: 'Resultados', link: '#resultados' },
     { label: 'Procedimentos', link: '#procedimentos' }
   ];
