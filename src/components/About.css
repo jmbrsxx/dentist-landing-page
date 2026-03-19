@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 20px 60px rgba(184, 115, 51, 0.25);
   border: 3px solid var(--gold-dark);
 }
 
@@ -127,3 +127,7 @@
     align-items: center;
   }
 }
+
+
+
+

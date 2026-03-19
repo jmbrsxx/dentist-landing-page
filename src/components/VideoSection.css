@@ -27,8 +27,8 @@
 .video-item {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.12);
-  border: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 8px 25px rgba(184, 115, 51, 0.12);
+  border: 1px solid rgba(184, 115, 51, 0.15);
   transition: all 0.4s ease;
   width: 100%;
   background: var(--black-secondary);
@@ -37,7 +37,7 @@
 
 .video-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 40px rgba(184, 115, 51, 0.25);
   border-color: var(--gold-primary);
 }
 
@@ -64,3 +64,6 @@
     max-width: 400px;
   }
 }
+
+
+

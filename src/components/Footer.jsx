@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Links Rápidos</h4>
           <ul>
-            <li><a href="#services">Serviços</a></li>
+            <li><a href="#antes-depois">Serviços</a></li>
             <li><a href="#about">Sobre Nós</a></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="#contact">Contato</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="footer-services">
           <h4>Serviços</h4>
           <ul>
-            <li><a href="#services">Limpeza Dental</a></li>
+            <li><a href="#procedimentos">Limpeza Dental</a></li>
             <li><a href="#procedimentos">Clareamento</a></li>
             <li><a href="#procedimentos">Tratamento de Canal</a></li>
             <li><a href="#procedimentos">Implantes</a></li>

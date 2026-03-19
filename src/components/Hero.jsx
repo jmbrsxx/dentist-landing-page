@@ -15,7 +15,7 @@ const Hero = () => {
           <span>155+ avaliações</span>
         </div>
         <h1 className="hero-title">
-          <span className="highlight">NovaOdonto</span> - Dentista em Canoas
+          <span className="highlight">NovaOdonto</span> - Dentista em Canoas, especialista em implantes e próteses dentárias.
         </h1>
         <p className="hero-subtitle">
           Mais de 155 avaliações 5 estrelas e atendimento especializado para cuidar do seu sorriso.
